@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.logo img {
+    width: 200px;
+    height: auto;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none; 
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;   
+}
+.navbar {
+    background: white;
+    height: 60px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+
+.navbar a:hover {
+    color: lightgreen;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.header {
+    background-color: green;
+    color: white;
+    min-height: 400px;
+    padding: 40px 0;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.header p {
+    font-size: 36px;
+}
+
+.header img {
+    max-width: 400px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    flex: 1;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 15px 20px;
+    background-color: lightgreen;
+} 
+
+.box h2 {
+    text-align: center;
+}
+
+.team .container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.team {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.team img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.team-member {
+    margin-bottom: 30px;
+}
+
+.info {
+    width: 200px;
+    text-align: center;
+}
+
+.partners {
+    background: green;
+    text-align: center;
+    padding: 24px 0;
+    color: white;
+}
+
+.partners .logo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subscribe {
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 52px;
+}
+
+.subscribe button {
+    color: #F9FAF8;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: green;
+    border: #F9FAF8 solid 2px;
+    padding: 8px 24px;
+    font-weight: bold;
+}
+
+.subscribe p {
+    font-size: large;
+}
+
+#contact {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+#contact p {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer {
+    background-color: green;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: white;
+}
+
+
+@media(max-width: 768px) {
+    .header {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .boxes .container {
+        display: block;
+        text-align: center;
+    }
+    .header img {
+        width: 100%;
+    }
+    .team .container {
+        display: block;
+    }
+
+    .team img {
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .partners .logo {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .subscribe {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
