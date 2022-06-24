@@ -26,12 +26,12 @@ ul {
     list-style-type: none; 
 }
 .container {
-    max-width: 1100px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0 30px;   
 }
 .navbar {
-    background: white;
+    background: #fff;
     height: 60px;
 }
 
@@ -63,7 +63,7 @@ ul {
 
 .header {
     background-color: green;
-    color: white;
+    color: #fff;
     min-height: 400px;
     padding: 40px 0;
 }
